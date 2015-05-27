@@ -1,0 +1,45 @@
+body {
+  padding: 20px 10px;
+	font-family: Helvetica;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.section {
+  border-radius: 20px;
+	color: black;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.chapter1 {
+  background-color: #ff7f50 ;
+}
+
+.chapter2 {
+  background-color: #98fb98  ;
+}
+
+.chapter3 {
+  background-color: #00bfff
+}
+.chapter4 {
+  background-color: #ffc0cb  ;
+}
+
+.concepts {
+	background-color: #e0ffff;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 4px;
+	color: black;
+}
+
+.code1 {   
+    padding-left:  16px;
+    padding-right: 16px;
+}

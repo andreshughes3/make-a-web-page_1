@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>A Pen by  Andres</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="chapter1 section">
+  <h2>The Basics of Web and HTML</h2>
+  <div class="concepts">
+    <p>
+      <b> What is the Web?</b>
+      <br>The web is a collection of html documents that essentially links everything together.
+    </p>
+    <p>
+      <b>What are the major peieces of the Web?</b>
+    </p>
+    <ol>
+      <li> Computer running a browser that displays files found on the web
+      </li>
+      <li>Internet (basically a computer network)
+        <ul>
+          <li>The browser will make requests via internet to servers using http
+          </li>
+          <li>http is a protocol that browsers uses to communicate with servers
+          </li>
+        </ul>
+        <li>Servers: computers that host the files the make up the web
+        </li>
+    </ol>
+    <p>
+      <b>What is HTML?</b>
+      <br> HTML or hypertext markup language are documents that are made up of (1) text content, (2) markup, (3) references to other documents, (4) and links to other pages.
+    </p>
+    <p>
+      <b>What is a webpage?</b>
+      <br> a webpage is a text document written in a language called HTML. Web browser read these documents and then interpret and display them.
+    </p>
+    <p>
+      <b>How does coding work?</b>
+      <br> text is written in a language that a computer can understand, but computers are stupid and can only read <em>exact code.</em>
+    </p>
+  </div>
+</div>
+
+<div class="chapter2 section">
+  <h2>Some Basic HTML Vocabulary</h2>
+  <div class="concepts">
+    <p>
+      <b>What is a Tag?</b>
+      <br> a tag is the name of an HTML element enclosed by brackets
+    </p>
+    <p>
+      <b>What is an element?</b>
+      <br> an element is a single component of an html document and refers to everything within a set of opening and closing tags.
+    </p>
+    <p>
+      <b>What is an attribute?</b>
+      <br>an attribute is a property of an html element and modifies the element
+    </p>
+    <p>
+      <b>What is the difference between inline vs block elements</b>
+      <br>Block elements form a invisible box around the content inside them and will start a new line. Whereas, inline elements are just that "in line".
+    </p>
+  </div>
+</div>
+
+<div class="chapter3 section">
+  <h2>Creating a Structured Document</h2>
+  <div class="concepts">
+    <p>
+      There are three languages (syntax + rules) of web development: (1) html (2) CSS (3) JS
+    </p>
+    <p>
+      <b>1. HTML</b>(the structure)
+      <br>--the standard markup language used to create web pages
+    </p>
+    <p>
+      <b>2. CSS</b>
+      <br>--Cascading Style Sheets: a style sheet language used for describing the look and formatting of a document written in a markup language
+    </p>
+    <p>
+      <b>3. JavaScript</b>(will not study): the interactive components
+    </p>
+    <p>
+      <b>DOM</b>:document object model
+      <br>--a cross platform and language independent convention for representing and interacting with objects in HTML and other markup languages. The nodes of every document are organized in a branch like tree structure.
+    </p>
+    <p>
+      <b> ScratchPad vs CodePen vs Sublime</b>
+      <br>ScratchPad is good for beginning; gives immediate response. While CodePen is good for sharing, Sublime is for advanced coders.
+    </p>
+    <p>
+      <b>The relationship between indented HTML and boxes</b>
+      <br>When you read an HTML document as <em>text</em>, you see a wave of changing indentations going up and down the left side of the document. The more indented an element is, the more deeply nested it's corresponding "box" is.
+    </p>
+  </div>
+</div>
+<div class="chapter4 section">
+  <h2>Adding CSS Style and HTML Structure</h2>
+  <div class="concepts">
+    <p>
+      Purpose: <u><em>Avoid Repetition</em> </u>
+      <br> Less Code = Less Error = Easy to make changes = Pretty Code = Good Code
+    </p>
+    <p>
+      <b>Search and Replace</b>
+      <br>You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.
+    </p>
+    <p>
+      <b> Order Matters</b>
+      <br>It also matters where you define the rules and in what order they are pplied. Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+      <br>
+      <br>• The default style of a browser (different browsers have slightly different styles)
+      <br>• stylesheet in a separate file (this is what you will be mostly using)
+      <br>• stylesheet inside HTML (this can be done for small projects but is not ideal)
+      <br>• inline style in an element (this can also be done but should be avoided)
+    </p>
+    <p>
+      <b>Specifics Matter</b>
+      <br>"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+    </p>
+    <p>
+      <b>Inheritence</b>
+      <br>A mechanism by which properties are applied not only to a specified element, but also to its descendants.. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related
+      properties, but box-related properties are not inherited. Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing. Properties that
+      cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.
+    </p>
+    <p>
+      <b>How do I include CSS styling in my web page?</b>
+      <br>Method 2: Link your HTML to a separate CSS file
+    </p>
+    <p>
+      This adds another step, but it lets you stay more organized when working on larger projects. To do this: 1. Write all of your structural HTML in one file (let's call it <code> main.html</code>). 2. In a separate file (let's call it<code> main.css</code>),
+      put all of your CSS code. 3. Add a<code> &lt;head&gt;</code> element to the top of your HTML. 4. Add a <code> &lt;link&gt;</code> tag inside the<code>head</code> element. Since <code> &lt;link&gt; </code> is a "void tag" you don't need to add a
+      closing. 5. Add the following attributes to your<code> &lt;link&gt; </code>:<code> rel="stylesheet" href="main.css"</code> For example, you would have a main.html file that looked like this:
+    </p>
+    <div class="code1">
+
+      <code> 
+             
+              &lt;head&gt;
+             <br>&lt;link rel="stylesheet"  href="main.css" &gt;
+             <br>&lt;/head&gt;
+             <br>
+            <br>&lt;body&gt;
+              <br>&lt;div&gt;
+               <br> This will have a red background.
+              <br>&lt;/div&gt;
+            <br>&lt;/body&gt; 
+             </code>
+      <br>and in the same folder you would have a file called <code>main.css</code> like this:
+      <code>
+             <br> div {
+            <br> background-color : red;
+            <br>}
+              
+            </code>
+
+    </div>
+
+    <p>
+      <b>Code Comments</b>
+      <br>• In HTML, code comments begin with &lt;! -- and end with --&gt;. Everything in between is ignored.
+      <br>• In CSS, code comments begin with /* and end with */.
+    </p>
+    <p>
+      <b>Box Sizing</b>
+    </p>
+    <ol>
+      <li>
+        HTML elements are boxes and each box has 4 components.
+      </li>
+      <li>
+        2. Because there are so many components to each box, it can often be hard to get the size of a box just right.
+      </li>
+      <li>
+        There are two techniques you can use to help deal with sizing issues.
+        <br>&nbsp; 1. Set sizes in terms of percentages rather than pixels.
+        <br>&nbsp; 2. Set the <code>box-sizing</code> attribute to <code>border-box</code> for every element
+        <code>
+            <br>{
+            <br>box-sizing: border-box;
+            <br>}
+            </code>
+      </li>
+      <li>
+        Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.
+      </li>
+    </ol>
+
+    <p>
+      <b>Box Positioning</b>
+    </p>
+    <ol>
+      <li>
+        Divs are <b>block</b> elements (as opposed to inline), so by default they take up the entire width of a page.
+      </li>
+      <li> Adding the rule <code>display: flex;</code> to the appropriate CSS will override this behavior and let divs appear next to each other.
+      </li>
+    </ol>
+
+  </div>
+</div>
+    
+    
+    
+    
+    
+  </body>
+</html>
